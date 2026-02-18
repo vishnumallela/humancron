@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+echo "🔨 Running pre-commit hooks..."
+
+echo "🔨 Building..."
+bun run build
+echo "🔨 Build completed!"
+
+echo "🧪 Running tests..."
+bun test
+echo "🧪 Tests passed!"
+
+echo "✅ Pre-commit hooks completed successfully."
