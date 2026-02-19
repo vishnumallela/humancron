@@ -5,15 +5,15 @@ A human readable cron scheduler for Node and Bun with timezone and seconds suppo
 ## Installation
 
 ```sh
-npm install humancron
+npm install @vishnumallela/humancron
 # or
-bun add humancron
+bun add @vishnumallela/humancron
 ```
 
 ## Usage
 
 ```ts
-import { when } from 'humancron';
+import { when } from '@vishnumallela/humancron';
 
 // run every day at 9:30am
 const stop = when()
